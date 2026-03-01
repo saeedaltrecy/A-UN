@@ -1,0 +1,1189 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="برنامج البكالوريوس - طب عام وجراحة – كلية الطب والعلوم الصحية – جامعة العرب">
+    <meta name="keywords" content="طب عام, جراحة, بكالوريوس, كلية الطب, جامعة العرب">
+    <meta name="author" content="جامعة العرب">
+    <meta name="robots" content="index, follow">
+    <title>برنامج البكالوريوس | طب عام وجراحة | جامعة العرب</title>
+
+    <!-- Favicon -->
+    <link rel="icon" type="image/png" href="./img/about-img.png">
+
+    <!-- Fonts -->
+    <link rel="stylesheet" href="css/fonts.css">
+
+    <!-- Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.1/css/all.min.css">
+    <link rel='stylesheet' href='https://cdn-uicons.flaticon.com/uicons-regular-rounded/css/uicons-regular-rounded.css'>
+
+    <!-- GSAP + Lenis -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js"></script>
+    <script src="https://unpkg.com/lenis@1.1.17/dist/lenis.min.js"></script>
+
+    <!-- AOS -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+
+    <!-- Swiper -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css">
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+
+    <!-- Main CSS -->
+    <link rel="stylesheet" href="css/style.css">
+    <script src="./js/style.js" defer></script>
+</head>
+<body class="font-cairo text-gray-900 antialiased">
+
+     <!-- Navbar / Header -->
+    <header class="bg-white shadow-sm border-b border-gray-100 sticky top-0 z-50">
+        <div class="  mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex justify-between items-center h-16 main-header-height">
+                
+                <!-- Right Side Group: Logo + Navigation -->
+                <div class="flex items-center gap-6 xl:gap-8">
+                    <!-- Logo -->
+                    <div class="flex-shrink-0">
+                        <a href="index.html" class="flex items-center">
+                            <img class="h-10 w-auto object-contain" src="img/logo.png" alt="جامعة العرب">
+                        </a>
+                    </div>
+
+                    
+                    <nav class="hidden lg:flex space-x-2 xl:space-x-6 space-x-reverse relative z-50">
+                     
+                        <div class="nav-dropdown-wrapper relative h-full flex items-center">
+                            <button class="nav-dropdown-trigger text-gray-600 hover:text-primary font-bold text-sm px-1 py-2 inline-flex items-center transition-colors duration-200">
+                                <span>عن الجامعة</span>
+                                <i class="fi fi-rr-angle-small-down text-[10px] mr-1 mt-1 text-gray-400 transition-transform duration-300"></i>
+                            </button>
+                            <!-- Mega Dropdown -->
+                            <div class="mega-dropdown">
+                                <div class="mega-dropdown-content compact">
+                                    <div class="mega-dropdown-grid">
+                                        <a href="#" class="mega-dropdown-link">نبذة عن الجامعة</a>
+                                        <a href="#" class="mega-dropdown-link">الرؤية والرسالة</a>
+                                        <a href="#" class="mega-dropdown-link">القيادة الجامعية</a>
+                                        <a href="#" class="mega-dropdown-link">الهيكل التنظيمي</a>
+                                        <a href="#" class="mega-dropdown-link">العضويات والاعترافات</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Tab 2: الكليات -->
+                        <div class="nav-dropdown-wrapper relative h-full flex items-center">
+                            <button class="nav-dropdown-trigger text-gray-600 hover:text-primary font-bold text-sm px-1 py-2 inline-flex items-center transition-colors duration-200">
+                                <span>الكليات</span>
+                                <i class="fi fi-rr-angle-small-down text-[10px] mr-1 mt-1 text-gray-400 transition-transform duration-300"></i>
+                            </button>
+                            <!-- Mega Dropdown -->
+                            <div class="mega-dropdown">
+                                <div class="mega-dropdown-content compact">
+                                    <div class="mega-dropdown-grid">
+                                        <a href="college-medicine.html" class="mega-dropdown-link">كلية الطب والعلوم الصحية</a>
+                                        <a href="#" class="mega-dropdown-link">كلية طب الأسنان</a>
+                                        <a href="#" class="mega-dropdown-link">كلية الهندسة وتقنية المعلومات</a>
+                                        <a href="#" class="mega-dropdown-link">كلية العلوم الإدارية</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Tab 3: المراكز والوحدات -->
+                        <div class="nav-dropdown-wrapper relative h-full flex items-center">
+                            <button class="nav-dropdown-trigger text-gray-600 hover:text-primary font-bold text-sm px-1 py-2 inline-flex items-center transition-colors duration-200">
+                                <span>المراكز والوحدات</span>
+                                <i class="fi fi-rr-angle-small-down text-[10px] mr-1 mt-1 text-gray-400 transition-transform duration-300"></i>
+                            </button>
+                            <!-- Mega Dropdown -->
+                            <div class="mega-dropdown">
+                                <div class="mega-dropdown-content compact">
+                                    <div class="mega-dropdown-grid">
+                                        <a href="#" class="mega-dropdown-link">مركز التطوير الأكاديمي وضمان الجودة</a>
+                                        <a href="#" class="mega-dropdown-link">وحدة الإرشاد الأكاديمي</a>
+                                        <a href="#" class="mega-dropdown-link">وحدة خدمة المجتمع</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Tab 4: شؤون الطلاب -->
+                        <div class="nav-dropdown-wrapper relative h-full flex items-center">
+                            <button class="nav-dropdown-trigger text-gray-600 hover:text-primary font-bold text-sm px-1 py-2 inline-flex items-center transition-colors duration-200">
+                                <span>شؤون الطلاب</span>
+                                <i class="fi fi-rr-angle-small-down text-[10px] mr-1 mt-1 text-gray-400 transition-transform duration-300"></i>
+                            </button>
+                            <!-- Mega Dropdown -->
+                            <div class="mega-dropdown">
+                                <div class="mega-dropdown-content compact">
+                                    <div class="mega-dropdown-grid">
+                                        <a href="#" class="mega-dropdown-link">دليل الطالب</a>
+                                        <a href="#" class="mega-dropdown-link">التقديم الإلكتروني</a>
+                                        <a href="#" class="mega-dropdown-link">اللوائح والأنظمة</a>
+                                        <a href="#" class="mega-dropdown-link">النماذج والاستمارات</a>
+                                        <a href="#" class="mega-dropdown-link">الخريجون</a>
+                                        <a href="#" class="mega-dropdown-link">التقويم الأكاديمي</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Tab 5: البحث العلمي -->
+                        <div class="nav-dropdown-wrapper relative h-full flex items-center">
+                            <button class="nav-dropdown-trigger text-gray-600 hover:text-primary font-bold text-sm px-1 py-2 inline-flex items-center transition-colors duration-200">
+                                <span>البحث العلمي</span>
+                                <i class="fi fi-rr-angle-small-down text-[10px] mr-1 mt-1 text-gray-400 transition-transform duration-300"></i>
+                            </button>
+                            <!-- Mega Dropdown -->
+                            <div class="mega-dropdown">
+                                <div class="mega-dropdown-content compact">
+                                    <div class="mega-dropdown-grid">
+                                        <a href="#" class="mega-dropdown-link">عمادة البحث العلمي</a>
+                                        <a href="#" class="mega-dropdown-link">مجلات الجامعة العلمية</a>
+                                        <a href="#" class="mega-dropdown-link">المؤتمرات والندوات</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Tab 6: خدمة المجتمع -->
+                        <div class="nav-dropdown-wrapper relative h-full flex items-center">
+                            <button class="nav-dropdown-trigger text-gray-600 hover:text-primary font-bold text-sm px-1 py-2 inline-flex items-center transition-colors duration-200">
+                                <span>خدمة المجتمع</span>
+                                <i class="fi fi-rr-angle-small-down text-[10px] mr-1 mt-1 text-gray-400 transition-transform duration-300"></i>
+                            </button>
+                            <!-- Mega Dropdown -->
+                            <div class="mega-dropdown">
+                                <div class="mega-dropdown-content compact">
+                                    <div class="mega-dropdown-grid">
+                                        <a href="#" class="mega-dropdown-link">العيادات المجانية</a>
+                                        <a href="#" class="mega-dropdown-link">القوافل الطبية</a>
+                                        <a href="#" class="mega-dropdown-link">الفعاليات</a>
+                                        <a href="#" class="mega-dropdown-link">تطوع معنا</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Tab 7: الإعلام -->
+                        <div class="nav-dropdown-wrapper relative h-full flex items-center">
+                            <button class="nav-dropdown-trigger text-gray-600 hover:text-primary font-bold text-sm px-1 py-2 inline-flex items-center transition-colors duration-200">
+                                <span>الإعلام</span>
+                                <i class="fi fi-rr-angle-small-down text-[10px] mr-1 mt-1 text-gray-400 transition-transform duration-300"></i>
+                            </button>
+                            <!-- Mega Dropdown -->
+                            <div class="mega-dropdown">
+                                <div class="mega-dropdown-content compact">
+                                    <div class="mega-dropdown-grid">
+                                        <a href="news.html" class="mega-dropdown-link">أخبار الجامعة</a>
+                                        <a href="#" class="mega-dropdown-link">الإعلانات</a>
+                                        <a href="#" class="mega-dropdown-link">الصور والفيديو</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Tab 8: تواصل معنا -->
+                        <div class="nav-dropdown-wrapper relative h-full flex items-center">
+                            <button class="nav-dropdown-trigger text-gray-600 hover:text-primary font-bold text-sm px-1 py-2 inline-flex items-center transition-colors duration-200">
+                                <span>تواصل معنا</span>
+                                <i class="fi fi-rr-angle-small-down text-[10px] mr-1 mt-1 text-gray-400 transition-transform duration-300"></i>
+                            </button>
+                            <!-- Mega Dropdown -->
+                            <div class="mega-dropdown mega-dropdown-left">
+                                <div class="mega-dropdown-content compact">
+                                    <div class="mega-dropdown-grid">
+                                        <a href="#" class="mega-dropdown-link">بيانات الاتصال</a>
+                                        <a href="#" class="mega-dropdown-link">مواقع الكليات</a>
+                                        <a href="#" class="mega-dropdown-link">الشكاوى والمقترحات</a>
+                                        <a href="#" class="mega-dropdown-link">التوظيف</a>
+                                        <a href="#" class="mega-dropdown-link">الأسئلة الشائعة</a>
+                                        <a href="#" class="mega-dropdown-link">خريطة الموقع</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </nav>
+                </div>
+
+                <!-- Left Side Group: Actions -->
+                <div class="hidden lg:flex items-center gap-4 xl:gap-6">
+                    <!-- Search -->
+                    <button id="search-btn-desktop" class="text-gray-500 hover:text-primary transition-colors p-2">
+                        <i class="fi fi-rr-search text-lg"></i>
+                    </button>
+
+                    <!-- Language -->
+                    <a href="#" class="text-gray-600 hover:text-primary font-bold text-sm flex items-center gap-2 transition-colors">
+                        <i class="fi fi-rr-globe text-lg"></i>
+                        <span>English</span>
+                    </a>
+
+                    <!-- Admission / Join -->
+                    <!-- Admission / Join -->
+                    <a href="#" class="bg-primary hover:bg-primary-dark text-white font-bold text-sm px-2 py-2 rounded-lg transition-colors duration-300 shadow-sm hover:shadow-md">
+                        الالتحاق
+                    </a>
+                </div>
+
+                <!-- Mobile Actions (Search, Language, Menu) -->
+                <div class="lg:hidden flex items-center gap-0.5">
+                    <!-- Search -->
+                    <button id="search-btn-mobile" class="text-gray-500 hover:text-primary transition-colors p-2">
+                        <i class="fi fi-rr-search text-xl"></i>
+                    </button>
+
+                    <!-- Language -->
+                    <a href="#" class="text-gray-600 hover:text-primary font-bold text-sm flex items-center gap-2 transition-colors">
+                        <i class="fi fi-rr-globe text-lg"></i>
+                        <span>English</span>
+                    </a>
+
+                    <!-- Mobile menu button -->
+                    <button id="mobile-menu-btn" class="text-gray-500 hover:text-primary focus:outline-none p-2">
+                        <i class="fi fi-rr-menu-burger text-2xl"></i>
+                    </button>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- Mobile Menu Overlay -->
+    <div id="mobile-overlay" class="mobile-overlay"></div>
+
+    <!-- Search Overlay -->
+    <div id="search-backdrop" class="search-backdrop"></div>
+    <div id="search-overlay" class="search-overlay">
+        <div class="search-overlay-container">
+            <!-- Close Button -->
+            <div class="search-close-wrapper">
+                <button id="search-close-btn" class="search-close-btn">
+                    <i class="fi fi-rr-cross text-lg"></i>
+                </button>
+            </div>
+
+            <!-- Search Content -->
+            <div class="search-content-inner">
+                <div class="search-input-group">
+                    <div class="search-input-wrapper">
+                        <i class="fi fi-rr-search search-input-icon"></i>
+                        <input type="text" placeholder="بحث" class="search-field">
+                    </div>
+                    <button class="search-submit-btn">بحث</button>
+                </div>
+
+            </div>
+        </div>
+    </div>
+
+    <!-- Mobile Menu Drawer (Slides from Right) -->
+    <div id="mobile-menu" class="mobile-drawer">
+        <!-- Drawer Header -->
+        <div class="mobile-drawer-header">
+            <img src="img/logo.png" alt="جامعة العرب" class="h-10">
+            <button id="mobile-close-btn" class="mobile-close-btn">
+                <i class="fi fi-rr-cross text-xl"></i>
+            </button>
+        </div>
+
+        <!-- Drawer Content -->
+        <div class="mobile-drawer-content">
+            
+            <!-- عن الجامعة -->
+            <div class="mobile-dropdown">
+                <button class="mobile-dropdown-trigger">
+                    <span>عن الجامعة</span>
+                    <i class="fi fi-rr-angle-small-down"></i>
+                </button>
+                <div class="mobile-dropdown-content">
+                    <a href="#">نبذة عن الجامعة</a>
+                    <a href="#">الرؤية والرسالة</a>
+                    <a href="#">القيادة الجامعية</a>
+                    <a href="#">الهيكل التنظيمي</a>
+                    <a href="#">العضويات والاعترافات</a>
+                </div>
+            </div>
+
+            <!-- الكليات -->
+            <div class="mobile-dropdown">
+                <button class="mobile-dropdown-trigger">
+                    <span>الكليات</span>
+                    <i class="fi fi-rr-angle-small-down"></i>
+                </button>
+                <div class="mobile-dropdown-content">
+                    <a href="college-medicine.html">كلية الطب والعلوم الصحية</a>
+                    <a href="#">كلية طب الأسنان</a>
+                    <a href="#">كلية الهندسة وتقنية المعلومات</a>
+                    <a href="#">كلية العلوم الإدارية</a>
+                </div>
+            </div>
+
+            <!-- المراكز والوحدات -->
+            <div class="mobile-dropdown">
+                <button class="mobile-dropdown-trigger">
+                    <span>المراكز والوحدات</span>
+                    <i class="fi fi-rr-angle-small-down"></i>
+                </button>
+                <div class="mobile-dropdown-content">
+                    <a href="#">مركز التطوير الأكاديمي وضمان الجودة</a>
+                    <a href="#">وحدة الإرشاد الأكاديمي</a>
+                    <a href="#">وحدة خدمة المجتمع</a>
+                </div>
+            </div>
+
+            <!-- شؤون الطلاب -->
+            <div class="mobile-dropdown">
+                <button class="mobile-dropdown-trigger">
+                    <span>شؤون الطلاب</span>
+                    <i class="fi fi-rr-angle-small-down"></i>
+                </button>
+                <div class="mobile-dropdown-content">
+                    <a href="#">دليل الطالب</a>
+                    <a href="#">التقديم الإلكتروني</a>
+                    <a href="#">اللوائح والأنظمة</a>
+                    <a href="#">النماذج والاستمارات</a>
+                    <a href="#">الخريجون</a>
+                    <a href="#">التقويم الأكاديمي</a>
+                </div>
+            </div>
+
+            <!-- البحث العلمي -->
+            <div class="mobile-dropdown">
+                <button class="mobile-dropdown-trigger">
+                    <span>البحث العلمي</span>
+                    <i class="fi fi-rr-angle-small-down"></i>
+                </button>
+                <div class="mobile-dropdown-content">
+                    <a href="#">عمادة البحث العلمي</a>
+                    <a href="#">مجلات الجامعة العلمية</a>
+                    <a href="#">المؤتمرات والندوات</a>
+                </div>
+            </div>
+
+            <!-- خدمة المجتمع -->
+            <div class="mobile-dropdown">
+                <button class="mobile-dropdown-trigger">
+                    <span>خدمة المجتمع</span>
+                    <i class="fi fi-rr-angle-small-down"></i>
+                </button>
+                <div class="mobile-dropdown-content">
+                    <a href="#">العيادات المجانية</a>
+                    <a href="#">القوافل الطبية</a>
+                    <a href="#">الفعاليات</a>
+                    <a href="#">تطوع معنا</a>
+                </div>
+            </div>
+
+            <!-- الإعلام -->
+            <div class="mobile-dropdown">
+                <button class="mobile-dropdown-trigger">
+                    <span>الإعلام</span>
+                    <i class="fi fi-rr-angle-small-down"></i>
+                </button>
+                <div class="mobile-dropdown-content">
+                    <a href="news.html">أخبار الجامعة</a>
+                    <a href="#">الإعلانات</a>
+                    <a href="#">الصور والفيديو</a>
+                </div>
+            </div>
+
+            <!-- تواصل معنا -->
+            <div class="mobile-dropdown">
+                <button class="mobile-dropdown-trigger">
+                    <span>تواصل معنا</span>
+                    <i class="fi fi-rr-angle-small-down"></i>
+                </button>
+                <div class="mobile-dropdown-content">
+                    <a href="#">بيانات الاتصال</a>
+                    <a href="#">مواقع الكليات</a>
+                    <a href="#">الشكاوى والمقترحات</a>
+                    <a href="#">التوظيف</a>
+                    <a href="#">الأسئلة الشائعة</a>
+                    <a href="#">خريطة الموقع</a>
+                </div>
+            </div>
+
+        </div>
+
+        <!-- Drawer Footer -->
+        <div class="mobile-drawer-footer">
+            <a href="#" class="mobile-cta-btn">
+                الالتحاق
+            </a>
+        </div>
+    </div>
+<!-- College Menu Overlay -->
+<div id="college-menu-overlay" class="college-menu-overlay"></div>
+
+<!-- College Menu Drawer (Slides from Left) -->
+<div id="college-side-menu" class="college-side-menu">
+    <div class="college-menu-header">
+        <div class="college-menu-header-info">
+            <img src="img/images.jpg" alt="شعار الكلية" class="college-menu-logo">
+            <h3 class="college-menu-title">قائمة الكلية</h3>
+        </div>
+        <button id="college-menu-close" class="college-menu-close">
+            <i class="fi fi-rr-cross text-xs"></i>
+        </button>
+    </div>
+
+    <div class="college-menu-content">
+        <a href="college-medicine.html" class="college-side-link">عن الكلية</a>
+        
+        <div class="college-accordion">
+            <button class="college-accordion-trigger">
+                <span>اقسام الكلية</span>
+                <i class="fi fi-rr-angle-small-down"></i>
+            </button>
+            <div class="college-accordion-content">
+                <a href="dept-general-medicine.html" class="college-side-link">قسم طب عام وجراحة</a>
+                <a href="#" class="college-side-link">قسم الصيدلة</a>
+                <a href="#" class="college-side-link">قسم المختبرات الطبية</a>
+                <a href="#" class="college-side-link">قسم السمع و النطق</a>
+                <a href="#" class="college-side-link">قسم العلاج الطبيعي</a>
+            </div>
+            
+        </div>
+
+        <div class="college-accordion">
+            <button class="college-accordion-trigger">
+                <span>برامج الكلية</span>
+                <i class="fi fi-rr-angle-small-down"></i>
+            </button>
+            <div class="college-accordion-content">
+                <a href="program-general-medicine.html" class="college-side-link">برنامج البكالوريوس في طب عام وجراحة    </a>
+                <a href="#" class="college-side-link">برنامج سنه الامتياز في طب الاسنان</a>
+                <a href="#" class="college-side-link">برنامج البكالوريوس في طب وجراحة الفم والأسنان</a>
+                <a href="#" class="college-side-link">برنامج سنه الامتياز في طب الاسنان</a>
+                <a href="#" class="college-side-link">برنامج البكالوريوس في طب وجراحة الفم والأسنان</a>
+                <a href="#" class="college-side-link">برنامج سنه الامتياز في طب الاسنان</a>
+                <a href="#" class="college-side-link">برنامج البكالوريوس في طب وجراحة الفم والأسنان</a>
+                <a href="#" class="college-side-link">برنامج سنه الامتياز في طب الاسنان</a>
+                <a href="#" class="college-side-link">برنامج البكالوريوس في طب وجراحة الفم والأسنان</a>
+                <a href="#" class="college-side-link">برنامج سنه الامتياز في طب الاسنان</a>
+            </div>
+        </div>
+
+        <div class="college-accordion">
+            <button class="college-accordion-trigger">
+                <span>كادر الكلية</span>
+                <i class="fi fi-rr-angle-small-down"></i>
+            </button>
+            <div class="college-accordion-content">
+                <a href="#" class="college-side-link">كادر الكلية الأكاديمي</a>
+                <a href="#" class="college-side-link">كادر الكلية الأداري</a>
+            </div>
+        </div>
+
+        <a href="news.html" class="college-side-link">أخبار الكلية</a>
+
+        <div class="college-accordion">
+            <button class="college-accordion-trigger">
+                <span>مرافق الكلية</span>
+                <i class="fi fi-rr-angle-small-down"></i>
+            </button>
+            <div class="college-accordion-content">
+                <a href="#" class="college-side-link">المختبرات</a>
+                <a href="#" class="college-side-link">المكتبة</a>
+                <a href="#" class="college-side-link">قاعات الدراسية</a>
+            </div>
+        </div>
+
+        <a href="#" class="college-side-link">التعليم المستمر</a>
+        <a href="#" class="college-side-link">الهيكل التنظيمي</a>
+
+        <div class="college-accordion">
+            <button class="college-accordion-trigger">
+                <span>الجداول</span>
+                <i class="fi fi-rr-angle-small-down"></i>
+            </button>
+            <div class="college-accordion-content">
+                <a href="#" class="college-side-link">جدول طب عام وجراحة مستوى اول</a>
+                 
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- Floating Trigger Button -->
+<button id="college-menu-trigger" class="college-menu-trigger" aria-label="قائمة الكلية">
+    <i class="fi fi-rr-apps text-2xl"></i>
+</button>
+
+    <!-- Main Content -->
+    <main>
+        <!-- ===== PAGE HEADER ===== -->
+        <section class="page-header">
+            <div class="container mx-auto px-4 lg:px-12 relative z-10 w-full">
+                <div class="page-header-inner">
+                    <div class="breadcrumb" data-aos="fade-left" data-aos-delay="200">
+                        <a href="index.html">الرئيسية</a>
+                        <span class="sep">/</span>
+                        <a href="college-medicine.html">كلية الطب والعلوم الصحية</a>
+                        <span class="sep">/</span>
+                        <a href="dept-general-medicine.html">طب عام وجراحة</a>
+                        <span class="sep">/</span>
+                        <span class="current">برنامج البكالوريوس</span>
+                    </div>
+                    <h1 data-aos="fade-left" data-aos-delay="400" class="page-header-title">برنامج البكالوريوس - طب عام وجراحة</h1>
+                </div>
+            </div>
+        </section>
+
+        <!-- About Program Section -->
+        <section class="py-24 relative">
+            <div class="container mx-auto px-4 sm:px-6 lg:px-8">
+                <div class="max-w-5xl mx-auto">
+                    
+                    <!-- Elegant Split Layout Design -->
+                    <div class="program-about-wrapper left-right-section" data-aos="fade-up">
+                        <div class="program-about-grid">
+                            
+                            <!-- Text Side -->
+                            <div class="program-about-text-side">
+                                <!-- Header -->
+                                <div class="npdah">
+                                    <h2 class="text-3xl lg:text-4xl font-black text-primary m-2">
+                                        نبذة عن البرنامج
+                                    </h2>
+                                </div>
+                                
+                                <!-- Content -->
+                                <div class="prose max-w-none">
+                                    <p class="text-gray-600 text-lg md:text-xl leading-relaxed text-justify relative">
+                                        <span class="absolute -right-4 top-2 w-1 h-[calc(100%-16px)] bg-[#009e91] rounded-full"></span>
+                                        بكالوريوس الطب العام والجراحة هو برنامج للحصول على درجة جامعية يركز على تدريب الطلاب ليصبحوا أطباء. يستغرق البرنامج عادةً من خمس إلى ست سنوات لإكماله ويغطي مجموعة واسعة من الموضوعات، بما في ذلك علم التشريح وعلم وظائف الأعضاء وعلم الأدوية وعلم الأمراض والجراحة والطب السريري. خريجو البرنامج مؤهلون لإجراء امتحان الترخيص وأن يصبحوا أطباء مرخصين، ويقدمون خدمات الرعاية الطبية الأساسية للمرضى. يؤكد البرنامج على أهمية رعاية المرضى والممارسة الأخلاقية والمعرفة الحديثة في مجال الطب لتخريج أطباء أكفاء ومسؤولين تجاه مجتمعهم.
+                                    </p>
+                                </div>
+                                
+                                <!-- Decorative Bottom Element -->
+                                <div class="mt-10 flex items-center gap-3">
+                                    <div class="h-1 w-12 bg-[#009e91] rounded-full"></div>
+                                    <div class="h-1 w-3 bg-[#004e69] rounded-full"></div>
+                                    <div class="h-1 w-3 bg-[#004e69] rounded-full opacity-50"></div>
+                                </div>
+                            </div>
+                            
+                            <!-- Image Side -->
+                            <div class="program-about-image-side relative">
+                                <!-- Abstract decorative element -->
+                                <div class="absolute -top-4 -right-4 w-24 h-24 bg-[#009e91]/10 rounded-full z-0"></div>
+                                <div class="absolute -bottom-6 -left-6 w-32 h-32 bg-[#004e69]/10 rounded-full z-0"></div>
+                                
+                                <div class="program-about-image-container">
+                                    <img src="img/progrs.jpg" alt="طلاب الطب" class="w-full h-full object-cover transition-transform duration-700 hover:scale-105">
+                                </div>
+                            </div>
+
+
+                        </div>
+                    </div>
+                    
+                </div>
+            </div>
+        </section>
+
+        <!-- ===== PROGRAM VISION & MISSION ===== -->
+        <section class="college-hero-about">
+            <div id="program-vision-mission" class="vm-tabs-wrapper left-right-section" data-aos="fade-up">
+
+                <div class="vm-tabs-container">
+                    <div class="vm-tabs-group">
+                        <button onclick="switchTab('vision')" id="tab-vision" class="vm-tab-btn vm-tab-active">
+                            رؤية البرنامج
+                        </button>
+                        <button onclick="switchTab('mission')" id="tab-mission" class="vm-tab-btn vm-tab-inactive">
+                            رسالة البرنامج
+                        </button>
+                    </div>
+                </div>
+
+                <div class="vm-content-box">
+                    <div id="content-vision" class="tab-content transition-opacity duration-500 opacity-100 mt-6">
+                        <p class="vm-text text-center text-xl leading-relaxed">
+                            التميز في مجال التعليم والتدريب والبحث العلمي في العلوم الطبية
+                        </p>
+                    </div>
+
+                    <div id="content-mission" class="tab-content hidden transition-opacity duration-500 mt-6">
+                        <p class="vm-text text-center text-xl leading-relaxed">
+                             اعداد أطباء اكفاء لديهم المعارف والمهارات والسلوكيات التي تجعلهم قادرين على التعامل مع التحديات والتغييرات الصحية على المستوى الوطني والاقليمي والدولي والاهتمام بالتعلم الذاتي والبحث العلمي. 
+                        </p>
+                    </div>
+                </div>
+
+            </div>
+        </section>
+
+        <!-- ===== OBJECTIVES ===== -->
+        <section class="objectives-section left-right-section" data-aos="fade-up">
+            <div class="objectives-container">
+                <div class="obj-header">
+                    <h2 class="obj-title">أهداف البرنامج</h2>
+                    <div class="obj-line"></div>
+                </div>
+                <ul class="obj-list">
+                    <li class="obj-item" data-aos="fade-up" data-aos-delay="100">
+                        <div class="obj-icon"><span class="font-bold">1</span></div>
+                        <div class="obj-text">الاعداد والتأهيل المتميز للأطباء للعمل في كافة مجالات القطاع الصحي (الوقائية , العلاجية والتأهيلية)  بكفاءة واقتدار .</div>
+                    </li>
+                    <li class="obj-item" data-aos="fade-up" data-aos-delay="101">
+                        <div class="obj-icon"><span class="font-bold">2</span></div>
+                        <div class="obj-text">غرس وتنمية اخلاقيات مهنة الطب لدى الخريجين.</div>
+                    </li>
+                    <li class="obj-item" data-aos="fade-up" data-aos-delay="102">
+                        <div class="obj-icon"><span class="font-bold">3</span></div>
+                        <div class="obj-text">العمل علي تطبيق نظم ومعايير الجودة الشاملة في العملية التعليمية .</div>
+                    </li>
+                    <li class="obj-item" data-aos="fade-up" data-aos-delay="103">
+                        <div class="obj-icon"><span class="font-bold">4</span></div>
+                        <div class="obj-text">فتح مساقات للدراسات العليا في الاختصاصات الصحية والطبية وفقا وحاجة القطاع الصحي .</div>
+                    </li>
+                    <li class="obj-item" data-aos="fade-up" data-aos-delay="104">
+                        <div class="obj-icon"><span class="font-bold">5</span></div>
+                        <div class="obj-text">تشجيع وتوجيه البحوث العلمية نحو المشاكل الصحية على المستوى المحلي والوطني وايجاد الجلول المناسبة لها .</div>
+                    </li>
+                    <li class="obj-item" data-aos="fade-up" data-aos-delay="105">
+                        <div class="obj-icon"><span class="font-bold">6</span></div>
+                        <div class="obj-text">مشاركة الطاقم الاكاديمي والطلاب في تقديم وتحسين جودة الخدمات الصحية .</div>
+                    </li>
+                    <li class="obj-item" data-aos="fade-up" data-aos-delay="106">
+                        <div class="obj-icon"><span class="font-bold">7</span></div>
+                        <div class="obj-text">الالتزام بالمسؤولية الاجتماعية تجاه المجتمع وبما يسهم في التنمية الاجتماعية.</div>
+                    </li>
+                </ul>
+            </div>
+        </section>
+
+        <!-- ===== PROGRAM LEARNING OUTCOMES ===== -->
+        <section class="objectives-section left-right-section" data-aos="fade-up">
+            <div class="objectives-container">
+                <div class="obj-header">
+                    <h2 class="obj-title">مخرجات تعلم البرنامج</h2>
+                    <div class="obj-line"></div>
+                </div>
+                <ul class="outcomes-grid">
+                    <li class="outcome-card" data-aos="fade-up" data-aos-delay="100">
+                        <div class="outcome-number">1</div>
+                        <div class="outcome-text">يظهر المهارات الأساسية في أخذ التاريخ المرضي وتسجيله بطريقة منهجية.</div>
+                    </li>
+                    <li class="outcome-card" data-aos="fade-up" data-aos-delay="105">
+                        <div class="outcome-number">2</div>
+                        <div class="outcome-text">يجري الفحص السريري الشامل المناسب للعمر والجنس والحالة السريرية.</div>
+                    </li>
+                    <li class="outcome-card" data-aos="fade-up" data-aos-delay="110">
+                        <div class="outcome-number">3</div>
+                        <div class="outcome-text">يشخص الحالات المرضية سواء كانت روتينية أو طارئة.</div>
+                    </li>
+                    <li class="outcome-card" data-aos="fade-up" data-aos-delay="115">
+                        <div class="outcome-number">4</div>
+                        <div class="outcome-text">يقدم الرعاية الطبية للحالات الطبية بشكل عام وبشكل فوري للحالات الطارئة.</div>
+                    </li>
+                    <li class="outcome-card" data-aos="fade-up" data-aos-delay="120">
+                        <div class="outcome-number">5</div>
+                        <div class="outcome-text">يضع خطة متكاملة لعلاج حالة المريض يراعي فيها الظروف الاجتماعية والنفسية له.</div>
+                    </li>
+                    <li class="outcome-card" data-aos="fade-up" data-aos-delay="125">
+                        <div class="outcome-number">6</div>
+                        <div class="outcome-text">يمارس أساسيات الوقاية من العدوى والسيطرة عليها.</div>
+                    </li>
+                    <li class="outcome-card" data-aos="fade-up" data-aos-delay="130">
+                        <div class="outcome-number">7</div>
+                        <div class="outcome-text">يلتزم بالمبادئ والمعايير التي من شأنها ان تؤدي الى سلامة المريض.</div>
+                    </li>
+                    <li class="outcome-card" data-aos="fade-up" data-aos-delay="135">
+                        <div class="outcome-number">8</div>
+                        <div class="outcome-text">يكتب وصفات علاجية آمنة لمختلف الأدوية.</div>
+                    </li>
+                </ul>
+            </div>
+        </section>
+
+        <!-- ===== ADMISSION REQUIREMENTS ===== -->
+        <section class="objectives-section left-right-section" data-aos="fade-up">
+            <div class="objectives-container">
+                <div class="obj-header">
+                    <h2 class="obj-title">الشروط والقبول</h2>
+                    <div class="obj-line"></div>
+                </div>
+                
+                <div class="admission-table-wrapper">
+                    <table class="admission-table">
+                        <thead>
+                            <tr>
+                                <th>الشروط</th>
+                                <th>وصف</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>المؤهل المطلوب للالتحاق</td>
+                                <td>ثانوية عامة (القسم العلمي) أو ما يعادلها</td>
+                            </tr>
+                            <tr>
+                                <td>التقدير المطلوب للالتحاق</td>
+                                <td>80%</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+
+            </div>
+        </section>
+
+        <!-- ===== PROGRAM DEPARTMENTS SECTION ===== -->
+        <section class="objectives-section left-right-section" data-aos="fade-up">
+            <div class="objectives-container">
+                <div class="obj-header">
+                    <h2 class="obj-title">أقسام البرنامج</h2>
+                    <div class="obj-line"></div>
+                </div>
+
+                <!-- Departments Accordion Wrapper -->
+                <div class="programs-accordion-wrapper">
+
+                    <!-- الأقسام التابعة -->
+                    <div class="college-accordion programs-accordion-card accordion-bachelor">
+                        <button class="college-accordion-trigger programs-accordion-trigger">
+                            <span>الأقسام التابعة للبرنامج</span>
+                            <i class="fi fi-rr-angle-small-down"></i>
+                        </button>
+                        <div class="college-accordion-content">
+                            <div class="programs-accordion-body">
+                                <a href="dept-medical-education.html" class="college-side-link">قسم التعليم الطبي</a>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </section>
+
+        <!-- ===== GRADUATION REQUIREMENTS ===== -->
+        <section class="objectives-section left-right-section" data-aos="fade-up">
+            <div class="objectives-container">
+                <div class="obj-header">
+                    <h2 class="obj-title">متطلبات التخرج</h2>
+                    <div class="obj-line"></div>
+                </div>
+
+                <!-- Intro paragraph -->
+                <p class="text-gray-600 text-base md:text-lg leading-relaxed mb-8 text-right">
+                    يمنح الطالب درجة البكالوريوس من جامعة العرب إذا استوفى متطلبات التخرج التالية:
+                </p>
+
+                <!-- Requirements list -->
+                <ul class="obj-list">
+                    <li class="obj-item" data-aos="fade-up" data-aos-delay="100">
+                        <div class="obj-icon"><span class="font-bold">1</span></div>
+                        <div class="obj-text">
+                            أن يتم الطالب بنجاح دراسة جميع المقررات المطلوبة لكل تخصص.
+                        </div>
+                    </li>
+                    <li class="obj-item" data-aos="fade-up" data-aos-delay="200">
+                        <div class="obj-icon"><span class="font-bold">2</span></div>
+                        <div class="obj-text">
+                            الحصول على معدل تراكمي عام لا يقل عن <strong>65%</strong>.
+                        </div>
+                    </li>
+                </ul>
+            </div>
+        </section>
+
+        
+
+        <section class="objectives-section left-right-section" data-aos="fade-up" id="study-plan">
+            <div class="objectives-container">
+                <div class="obj-header">
+                    <h2 class="obj-title">الخطة الدراسية</h2>
+                    <div class="obj-line"></div>
+                </div>
+
+                <p class="text-gray-600 text-base md:text-lg leading-relaxed mb-8 text-right">
+                    فيما يلي نموذج لخطة دراسية تغطي الدورات والأنشطة الرئيسية التي يمكن أن يتوقع الطلاب القيام بها خلال برنامجهم الذي يمتد لأربع سنوات:
+                </p>
+
+                <div class="programs-accordion-wrapper">
+
+                    <!-- Accordion – العام الأكاديمي 2024-2025 -->
+                    <div class="college-accordion programs-accordion-card accordion-study-plan">
+
+                        <!-- Header row -->
+                        <div class="study-plan-row">
+                            <button class="college-accordion-trigger programs-accordion-trigger">
+                                <span>الخطة الدراسية – العام الأكاديمي 2024 – 2025</span>
+                                <i class="fi fi-rr-angle-small-down"></i>
+                            </button>
+                            <a href="img/University calendar.jpg"
+                               download="الخطة-الدراسية-طب-عام-2024-2025.jpg"
+                               onclick="event.stopPropagation()"
+                               title="تحميل الخطة الدراسية"
+                               class="study-plan-dl">
+                                <i class="fi fi-rr-download"></i>
+                                <span class="dl-label">تحميل</span>
+                            </a>
+                        </div>
+
+                        <!-- Accordion content -->
+                        <div class="college-accordion-content">
+                            <div class="programs-accordion-body" style="padding:1.25rem 1rem;">
+                                <div class="study-plan-img-box">
+                                    <img src="img/University calendar.jpg"
+                                         alt="الخطة الدراسية – العام الأكاديمي 2024-2025">
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+                    <!-- أضف خططاً لأعوام أخرى بنفس الهيكل هنا -->
+
+                </div>
+            </div>
+        </section>
+
+        <!-- ===== COURSE DESCRIPTIONS ===== -->
+        <section class="objectives-section left-right-section" data-aos="fade-up" id="course-desc-section">
+            <div class="objectives-container">
+                <div class="obj-header">
+                    <h2 class="obj-title">توصيف المقررات</h2>
+                    <div class="obj-line"></div>
+                </div>
+
+                <p class="text-gray-600 text-base md:text-lg leading-relaxed mb-8 text-right">
+                    تهدف الدورة إلى تأهيل الطلاب للعمل كأطباء وجراحين مؤهلين، والمساهمة في تحسين صحة المجتمع والوقاية من الأمراض وعلاجها.
+                </p>
+
+                <!-- ── المستوى الأول ── -->
+                <div class="cd-level" data-aos="fade-up" data-aos-delay="100">
+                    <button class="cd-level-header" onclick="toggleLevel(this)">
+                        <span class="cd-lh-icon"><i class="fi fi-rr-book-open-cover"></i></span>
+                        <span class="cd-lh-title">المستوى الأول</span>
+                        <i class="fi fi-rr-angle-small-down cd-lh-arrow"></i>
+                    </button>
+                    <div class="cd-level-body">
+                        <div class="cd-level-body-inner">
+
+                            <!-- الفصل الأول -->
+                            <div class="cd-semester">
+                                <div class="cd-semester-title">
+                                    <i class="fi fi-rr-calendar"></i>
+                                    الفصل الدراسي الأول
+                                </div>
+                                <div class="cd-table-scroll">
+                                    <table class="cd-table">
+                                        <thead>
+                                            <tr>
+                                                <th>اسم المقرر</th>
+                                                <th>رمز المقرر</th>
+                                                <th>عدد الساعات</th>
+                                                <th>التوصيف</th>
+                                            </tr>
+                                        </thead>
+                                        <tbody>
+                                            <!-- Course row -->
+                                            <tr>
+                                                <td>Arabic Language 1</td>
+                                                <td class="cd-code">ARAB112</td>
+                                                <td class="cd-hours">2</td>
+                                                <td>
+                                                    <button class="cd-desc-btn" onclick="toggleCourseRow(this)">
+                                                        <span>عرض التوصيف</span>
+                                                        <i class="fi fi-rr-angle-small-down"></i>
+                                                    </button>
+                                                </td>
+                                            </tr>
+                                            <tr class="cd-desc-row">
+                                                <td colspan="4">
+                                                    صُمِّم هذا المساق؛ ليزوّد الطالب بأساسيّات اللغة العربيّة التي تبصّره بقواعد نظامها النحويّ والصرفيّ بأسلوب سهل وواضح؛ ليتمكّن من التواصل اللغويّ السليم، متحدّثاً، وكاتباً، وقارئاً، ومستمعاً، بوصفه ناطقاً بالعربيّة.
+                                                </td>
+                                            </tr>
+                                            <!-- أضف مقررات إضافية هنا -->
+                                        </tbody>
+                                    </table>
+                                    <table class="cd-table">
+                                        <thead>
+                                            <tr>
+                                                <th>اسم المقرر</th>
+                                                <th>رمز المقرر</th>
+                                                <th>عدد الساعات</th>
+                                                <th>التوصيف</th>
+                                            </tr>
+                                        </thead>
+                                        <tbody>
+                                            <!-- Course row -->
+                                            <tr>
+                                                <td>Arabic Language 1</td>
+                                                <td class="cd-code">ARAB112</td>
+                                                <td class="cd-hours">2</td>
+                                                <td>
+                                                    <button class="cd-desc-btn" onclick="toggleCourseRow(this)">
+                                                        <span>عرض التوصيف</span>
+                                                        <i class="fi fi-rr-angle-small-down"></i>
+                                                    </button>
+                                                </td>
+                                            </tr>
+                                            <tr class="cd-desc-row">
+                                                <td colspan="4">
+                                                    صُمِّم هذا المساق؛ ليزوّد الطالب بأساسيّات اللغة العربيّة التي تبصّره بقواعد نظامها النحويّ والصرفيّ بأسلوب سهل وواضح؛ ليتمكّن من التواصل اللغويّ السليم، متحدّثاً، وكاتباً، وقارئاً، ومستمعاً، بوصفه ناطقاً بالعربيّة.
+                                                </td>
+                                            </tr>
+                                            <!-- أضف مقررات إضافية هنا -->
+                                        </tbody>
+                                    </table>
+                                </div>
+                            </div>
+                            <!-- الفصل الأول -->
+                            <div class="cd-semester">
+                                <div class="cd-semester-title">
+                                    <i class="fi fi-rr-calendar"></i>
+                                    الفصل الدراسي الثاني
+                                </div>
+                                <div class="cd-table-scroll">
+                                    <table class="cd-table">
+                                        <thead>
+                                            <tr>
+                                                <th>اسم المقرر</th>
+                                                <th>رمز المقرر</th>
+                                                <th>عدد الساعات</th>
+                                                <th>التوصيف</th>
+                                            </tr>
+                                        </thead>
+                                        <tbody>
+                                            <!-- Course row -->
+                                            <tr>
+                                                <td>Arabic Language 1</td>
+                                                <td class="cd-code">ARAB112</td>
+                                                <td class="cd-hours">2</td>
+                                                <td>
+                                                    <button class="cd-desc-btn" onclick="toggleCourseRow(this)">
+                                                        <span>عرض التوصيف</span>
+                                                        <i class="fi fi-rr-angle-small-down"></i>
+                                                    </button>
+                                                </td>
+                                            </tr>
+                                            <tr class="cd-desc-row">
+                                                <td colspan="4">
+                                                    صُمِّم هذا المساق؛ ليزوّد الطالب بأساسيّات اللغة العربيّة التي تبصّره بقواعد نظامها النحويّ والصرفيّ بأسلوب سهل وواضح؛ ليتمكّن من التواصل اللغويّ السليم، متحدّثاً، وكاتباً، وقارئاً، ومستمعاً، بوصفه ناطقاً بالعربيّة.
+                                                </td>
+                                            </tr>
+                                            <!-- أضف مقررات إضافية هنا -->
+                                        </tbody>
+                                    </table>
+                                    <table class="cd-table">
+                                        <thead>
+                                            <tr>
+                                                <th>اسم المقرر</th>
+                                                <th>رمز المقرر</th>
+                                                <th>عدد الساعات</th>
+                                                <th>التوصيف</th>
+                                            </tr>
+                                        </thead>
+                                        <tbody>
+                                            <!-- Course row -->
+                                            <tr>
+                                                <td>Arabic Language 1</td>
+                                                <td class="cd-code">ARAB112</td>
+                                                <td class="cd-hours">2</td>
+                                                <td>
+                                                    <button class="cd-desc-btn" onclick="toggleCourseRow(this)">
+                                                        <span>عرض التوصيف</span>
+                                                        <i class="fi fi-rr-angle-small-down"></i>
+                                                    </button>
+                                                </td>
+                                            </tr>
+                                            <tr class="cd-desc-row">
+                                                <td colspan="4">
+                                                    صُمِّم هذا المساق؛ ليزوّد الطالب بأساسيّات اللغة العربيّة التي تبصّره بقواعد نظامها النحويّ والصرفيّ بأسلوب سهل وواضح؛ ليتمكّن من التواصل اللغويّ السليم، متحدّثاً، وكاتباً، وقارئاً، ومستمعاً، بوصفه ناطقاً بالعربيّة.
+                                                </td>
+                                            </tr>
+                                            <!-- أضف مقررات إضافية هنا -->
+                                        </tbody>
+                                    </table>
+                                </div>
+                            </div>
+                            <!-- أضف فصولاً إضافية هنا -->
+
+                        </div>
+                    </div>
+                </div>
+                <!-- أضف مستويات إضافية بنفس هيكل cd-level -->
+
+            </div>
+        </section>
+
+        <!-- ===== CAREER OPPORTUNITIES ===== -->
+        <section class="objectives-section left-right-section" data-aos="fade-up" id="career-opportunities">
+            <div class="objectives-container">
+                <div class="obj-header">
+                    <h2 class="obj-title">الفرص الوظيفية</h2>
+                    <div class="obj-line"></div>
+                </div>
+
+                <p class="text-gray-600 text-base md:text-lg leading-relaxed mb-8 text-right">
+                    يؤهل برنامج الطب العام الخريجين للعمل في مجموعة واسعة من المجالات الطبية والصحية بمستشفيات القطاعين العام والخاص، مما يفتح أمامهم آفاقاً مهنية متنوعة تشمل:
+                </p>
+
+                <ul class="outcomes-grid" style="margin-bottom: 2rem;">
+                    <!-- طبيب عام -->
+                    <li class="outcome-card" data-aos="fade-up" data-aos-delay="100">
+                        <div class="outcome-number" style="width: 3rem; height: 3rem; font-size: 1.5rem;"><i class="fi fi-rr-stethoscope"></i></div>
+                        <h3 class="outcome-text !font-bold" style="font-size: 1.1rem; color: #1e293b;">طبيب عام</h3>
+                    </li>
+                    <!-- جراح -->
+                    <li class="outcome-card" data-aos="fade-up" data-aos-delay="200">
+                        <div class="outcome-number" style="width: 3rem; height: 3rem; font-size: 1.5rem;"><i class="fi fi-rr-scissors"></i></div>
+                        <h3 class="outcome-text !font-bold" style="font-size: 1.1rem; color: #1e293b;">جراح</h3>
+                    </li>
+                    <!-- طبيب الطوارئ -->
+                    <li class="outcome-card" data-aos="fade-up" data-aos-delay="300">
+                        <div class="outcome-number" style="width: 3rem; height: 3rem; font-size: 1.5rem;"><i class="fi fi-rr-ambulance"></i></div>
+                        <h3 class="outcome-text !font-bold" style="font-size: 1.1rem; color: #1e293b;">طبيب الطوارئ</h3>
+                    </li>
+                    <!-- طبيب أطفال -->
+                    <li class="outcome-card" data-aos="fade-up" data-aos-delay="400">
+                        <div class="outcome-number" style="width: 3rem; height: 3rem; font-size: 1.5rem;"><i class="fi fi-rr-baby"></i></div>
+                        <h3 class="outcome-text !font-bold" style="font-size: 1.1rem; color: #1e293b;">طبيب أطفال</h3>
+                    </li>
+                    <!-- طبيب الاسرة -->
+                    <li class="outcome-card" data-aos="fade-up" data-aos-delay="500">
+                        <div class="outcome-number" style="width: 3rem; height: 3rem; font-size: 1.5rem;"><i class="fi fi-rr-users"></i></div>
+                        <h3 class="outcome-text !font-bold" style="font-size: 1.1rem; color: #1e293b;">طبيب الأسرة</h3>
+                    </li>
+                </ul>
+            </div>
+        </section>
+
+
+    </main>
+
+    <!-- Footer -->
+    <footer class="main-footer">
+        <div class="footer-container">
+            <div class="footer-top">
+                <!-- Column 1: Logo & Contact Info -->
+                <div class="footer-col about-col">
+                    <img src="img/logo-white.png" alt="شعار جامعة العرب" class="mb-4 footer-main-logo">
+                    <p class="text-sm mb-2 text-white">هوية و حضارة</p>
+                    <div class="contact-info mt-4">
+                        <p class="mb-2 flex items-center gap-2 contact-text">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"></path><circle cx="12" cy="10" r="3"></circle></svg>
+                            اليمن - حضرموت - المكلا
+                        </p>
+                        <p class="mb-2 phone-ltr contact-text">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"></path></svg>
+                            05313131 / 05307111 / 05361884
+                        </p>
+                        <p class="mb-2 flex items-center gap-2 contact-text">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path><polyline points="22,6 12,13 2,6"></polyline></svg>
+                            info@alarabuni.edu.ye
+                        </p>
+                    </div>
+                    <div class="footer-social mt-6">
+                        <a href="#" class="social-icon" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#" class="social-icon" aria-label="Twitter"><i class="fab fa-x-twitter"></i></a>
+                        <a href="#" class="social-icon" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+                        <a href="#" class="social-icon" aria-label="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
+                        <a href="#" class="social-icon" aria-label="YouTube"><i class="fab fa-youtube"></i></a>
+                    </div>
+                </div>
+
+                <!-- Column 2: Colleges -->
+                <div class="footer-col">
+                    <h3 class="footer-title">الكليات</h3>
+                    <ul class="footer-links">
+                        <li><a href="#">كلية طب الاسنان</a></li>
+                        <li><a href="college-medicine.html">كلية الطب و العلوم الصحية</a></li>
+                        <li><a href="#">كلية الهندسة و تقنية المعلومات</a></li>
+                        <li><a href="#">كلية العلوم الادارية</a></li>
+                    </ul>
+                </div>
+
+                <!-- Column 3: Centers & Units -->
+                <div class="footer-col">
+                    <h3 class="footer-title">مراكز - وحدات الجامعة</h3>
+                    <ul class="footer-links">
+                        <li><a href="#">مركز التطوير الأكاديمي وضمان الجودة</a></li>
+                        <li><a href="#">وحدة الإرشاد الأكاديمي</a></li>
+                        <li><a href="#">وحدة خدمة المجتمع</a></li>
+                    </ul>
+                </div>
+
+                <!-- Column 4: Quick Links -->
+                <div class="footer-col">
+                    <h3 class="footer-title">روابط سريعة</h3>
+                    <ul class="footer-links">
+                        <li><a href="#">التسجيل في الجامعة</a></li>
+                        <li><a href="#">النماذج و الأستمارات</a></li>
+                        <li><a href="#">الخريجين</a></li>
+                        <li><a href="#">نتائج الطلاب</a></li>
+                        <li><a href="#">التقويم الجامعي</a></li>
+                    </ul>
+                </div>
+            </div>
+
+            <!-- Bottom Section -->
+            <div class="footer-bottom">
+                <div class="footer-copyright-col">
+                    <img src="img/logo_arab-svg.png" alt="شعار عرب وير دوز" class="mb-2 developer-logo">
+                    <a href="https://arabwdos.com/" target="_blank" class="copyright-text">جميع الحقوق محفوظة عرب وير دوز © 2026</a>
+                </div>
+                <div class="footer-logos-col map-container-wrapper">
+                    <a href="https://maps.google.com/?q=14.530875,49.123796" target="_blank" aria-label="Open Map" class="map-link">
+                        <div id="footer-mini-map" class="footer-mini-map"></div>
+                        <div class="map-overlay-label">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="mr-1"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"></path><circle cx="12" cy="10" r="3"></circle></svg>
+                            موقع الجامعة
+                        </div>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Accessibility Overlay -->
+    <div id="accessibility-overlay" style="position: fixed; top: 0; left: 0; width: 100%; height: 100%; z-index: 99990; pointer-events: none;"></div>
+    <div id="reading-guide"></div>
+
+    <!-- Accessibility Toolbar -->
+    <div id="accessibility-toolbar">
+        <button id="accessibility-toggle" aria-label="أدوات الوصول"><i class="fi fi-rr-wheelchair"></i></button>
+        <div id="accessibility-panel">
+            <div class="acc-header">
+                <h4>أدوات الوصول</h4>
+                <div style="background: rgba(0, 158, 145, 0.1); padding: 8px; border-radius: 8px;">
+                    <i class="fi fi-rr-universal-access" style="color: var(--primary); font-size: 20px;"></i>
+                </div>
+            </div>
+            <div class="acc-grid">
+                <button id="acc-font-up" class="acc-btn"><i class="fi fi-rr-zoom-in"></i><span>نص أكبر</span></button>
+                <button id="acc-font-down" class="acc-btn"><i class="fi fi-rr-zoom-out"></i><span>نص أصغر</span></button>
+                <button id="acc-cursor" class="acc-btn"><i class="fi fi-rr-mouse"></i><span>مؤشر كبير</span></button>
+                <button id="acc-grayscale" class="acc-btn"><i class="fi fi-rr-eye-crossed"></i><span>تدرج رمادي</span></button>
+                <button id="acc-contrast" class="acc-btn"><i class="fi fi-rr-bulb"></i><span>تباين عالي</span></button>
+                <button id="acc-negative" class="acc-btn"><i class="fi fi-rr-invert"></i><span>تباين سلبي</span></button>
+                <button id="acc-light-bg" class="acc-btn"><i class="fi fi-rr-brightness"></i><span>خلفية مضيئة</span></button>
+                <button id="acc-links" class="acc-btn"><i class="fi fi-rr-link-alt"></i><span>تحديد الروابط</span></button>
+                <button id="acc-reading-guide" class="acc-btn"><i class="fi fi-rr-ruler-horizontal"></i><span>مسطرة القراءة</span></button>
+            </div>
+            <button id="acc-reset" class="acc-reset-btn"><i class="fi fi-rr-rotate-right"></i> إعادة تعيين الإعدادات</button>
+        </div>
+    </div>
+
+    <!-- Scripts -->
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" integrity="sha256-p4NxAoJBhIIN+hmNHrzRCf9tD/miZyoHS5obTRR9BMY=" crossorigin="" />
+    <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js" integrity="sha256-20nQCchB9co0qIjJZRGuk2/Z9VM+kNiyxNV1lvTlZBo=" crossorigin=""></script>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollTrigger.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script src="js/style.js"></script>
+    <script src="js/college-menu.js" defer></script>
+    <script src="js/mobile-menu.js" defer></script>
+    <script src="js/accessibility-toolbar.js" defer></script>
+</body>
+</html>

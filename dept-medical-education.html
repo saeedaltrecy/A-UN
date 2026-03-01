@@ -1,0 +1,688 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="قسم التعليم الطبي – كلية الطب والعلوم الصحية – جامعة العرب">
+    <meta name="keywords" content="التعليم الطبي, كلية الطب, جامعة العرب">
+    <meta name="author" content="جامعة العرب">
+    <meta name="robots" content="index, follow">
+    <title>قسم التعليم الطبي | جامعة العرب</title>
+
+    <!-- Favicon -->
+    <link rel="icon" type="image/png" href="./img/about-img.png">
+
+    <!-- Fonts -->
+    <link rel="stylesheet" href="css/fonts.css">
+
+    <!-- Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.1/css/all.min.css">
+    <link rel='stylesheet' href='https://cdn-uicons.flaticon.com/uicons-regular-rounded/css/uicons-regular-rounded.css'>
+
+    <!-- GSAP + Lenis -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js"></script>
+    <script src="https://unpkg.com/lenis@1.1.17/dist/lenis.min.js"></script>
+
+    <!-- AOS -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+
+    <!-- Swiper -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css">
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+
+    <!-- Main CSS -->
+    <link rel="stylesheet" href="css/style.css">
+    <script src="./js/style.js" defer></script>
+</head>
+<body class="font-cairo text-gray-900 antialiased">
+
+    <!-- Navbar / Header -->
+    <header class="bg-white shadow-sm border-b border-gray-100 sticky top-0 z-50">
+        <div class="  mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex justify-between items-center h-16 main-header-height">
+                
+                <!-- Right Side Group: Logo + Navigation -->
+                <div class="flex items-center gap-6 xl:gap-8">
+                    <!-- Logo -->
+                    <div class="flex-shrink-0">
+                        <a href="index.html" class="flex items-center">
+                            <img class="h-10 w-auto object-contain" src="img/logo.png" alt="جامعة العرب">
+                        </a>
+                    </div>
+
+                    
+                    <nav class="hidden lg:flex space-x-2 xl:space-x-6 space-x-reverse relative z-50">
+                     
+                        <div class="nav-dropdown-wrapper relative h-full flex items-center">
+                            <button class="nav-dropdown-trigger text-gray-600 hover:text-primary font-bold text-sm px-1 py-2 inline-flex items-center transition-colors duration-200">
+                                <span>عن الجامعة</span>
+                                <i class="fi fi-rr-angle-small-down text-[10px] mr-1 mt-1 text-gray-400 transition-transform duration-300"></i>
+                            </button>
+                            <!-- Mega Dropdown -->
+                            <div class="mega-dropdown">
+                                <div class="mega-dropdown-content compact">
+                                    <div class="mega-dropdown-grid">
+                                        <a href="#" class="mega-dropdown-link">نبذة عن الجامعة</a>
+                                        <a href="#" class="mega-dropdown-link">الرؤية والرسالة</a>
+                                        <a href="#" class="mega-dropdown-link">القيادة الجامعية</a>
+                                        <a href="#" class="mega-dropdown-link">الهيكل التنظيمي</a>
+                                        <a href="#" class="mega-dropdown-link">العضويات والاعترافات</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Tab 2: الكليات -->
+                        <div class="nav-dropdown-wrapper relative h-full flex items-center">
+                            <button class="nav-dropdown-trigger text-gray-600 hover:text-primary font-bold text-sm px-1 py-2 inline-flex items-center transition-colors duration-200">
+                                <span>الكليات</span>
+                                <i class="fi fi-rr-angle-small-down text-[10px] mr-1 mt-1 text-gray-400 transition-transform duration-300"></i>
+                            </button>
+                            <!-- Mega Dropdown -->
+                            <div class="mega-dropdown">
+                                <div class="mega-dropdown-content compact">
+                                    <div class="mega-dropdown-grid">
+                                        <a href="college-medicine.html" class="mega-dropdown-link">كلية الطب والعلوم الصحية</a>
+                                        <a href="#" class="mega-dropdown-link">كلية طب الأسنان</a>
+                                        <a href="#" class="mega-dropdown-link">كلية الهندسة وتقنية المعلومات</a>
+                                        <a href="#" class="mega-dropdown-link">كلية العلوم الإدارية</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Tab 3: المراكز والوحدات -->
+                        <div class="nav-dropdown-wrapper relative h-full flex items-center">
+                            <button class="nav-dropdown-trigger text-gray-600 hover:text-primary font-bold text-sm px-1 py-2 inline-flex items-center transition-colors duration-200">
+                                <span>المراكز والوحدات</span>
+                                <i class="fi fi-rr-angle-small-down text-[10px] mr-1 mt-1 text-gray-400 transition-transform duration-300"></i>
+                            </button>
+                            <!-- Mega Dropdown -->
+                            <div class="mega-dropdown">
+                                <div class="mega-dropdown-content compact">
+                                    <div class="mega-dropdown-grid">
+                                        <a href="#" class="mega-dropdown-link">مركز التطوير الأكاديمي وضمان الجودة</a>
+                                        <a href="#" class="mega-dropdown-link">وحدة الإرشاد الأكاديمي</a>
+                                        <a href="#" class="mega-dropdown-link">وحدة خدمة المجتمع</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Tab 4: شؤون الطلاب -->
+                        <div class="nav-dropdown-wrapper relative h-full flex items-center">
+                            <button class="nav-dropdown-trigger text-gray-600 hover:text-primary font-bold text-sm px-1 py-2 inline-flex items-center transition-colors duration-200">
+                                <span>شؤون الطلاب</span>
+                                <i class="fi fi-rr-angle-small-down text-[10px] mr-1 mt-1 text-gray-400 transition-transform duration-300"></i>
+                            </button>
+                            <!-- Mega Dropdown -->
+                            <div class="mega-dropdown">
+                                <div class="mega-dropdown-content compact">
+                                    <div class="mega-dropdown-grid">
+                                        <a href="#" class="mega-dropdown-link">دليل الطالب</a>
+                                        <a href="#" class="mega-dropdown-link">التقديم الإلكتروني</a>
+                                        <a href="#" class="mega-dropdown-link">اللوائح والأنظمة</a>
+                                        <a href="#" class="mega-dropdown-link">النماذج والاستمارات</a>
+                                        <a href="#" class="mega-dropdown-link">الخريجون</a>
+                                        <a href="#" class="mega-dropdown-link">التقويم الأكاديمي</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Tab 5: البحث العلمي -->
+                        <div class="nav-dropdown-wrapper relative h-full flex items-center">
+                            <button class="nav-dropdown-trigger text-gray-600 hover:text-primary font-bold text-sm px-1 py-2 inline-flex items-center transition-colors duration-200">
+                                <span>البحث العلمي</span>
+                                <i class="fi fi-rr-angle-small-down text-[10px] mr-1 mt-1 text-gray-400 transition-transform duration-300"></i>
+                            </button>
+                            <!-- Mega Dropdown -->
+                            <div class="mega-dropdown">
+                                <div class="mega-dropdown-content compact">
+                                    <div class="mega-dropdown-grid">
+                                        <a href="#" class="mega-dropdown-link">عمادة البحث العلمي</a>
+                                        <a href="#" class="mega-dropdown-link">مجلات الجامعة العلمية</a>
+                                        <a href="#" class="mega-dropdown-link">المؤتمرات والندوات</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Tab 6: خدمة المجتمع -->
+                        <div class="nav-dropdown-wrapper relative h-full flex items-center">
+                            <button class="nav-dropdown-trigger text-gray-600 hover:text-primary font-bold text-sm px-1 py-2 inline-flex items-center transition-colors duration-200">
+                                <span>خدمة المجتمع</span>
+                                <i class="fi fi-rr-angle-small-down text-[10px] mr-1 mt-1 text-gray-400 transition-transform duration-300"></i>
+                            </button>
+                            <!-- Mega Dropdown -->
+                            <div class="mega-dropdown">
+                                <div class="mega-dropdown-content compact">
+                                    <div class="mega-dropdown-grid">
+                                        <a href="#" class="mega-dropdown-link">العيادات المجانية</a>
+                                        <a href="#" class="mega-dropdown-link">القوافل الطبية</a>
+                                        <a href="#" class="mega-dropdown-link">الفعاليات</a>
+                                        <a href="#" class="mega-dropdown-link">تطوع معنا</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Tab 7: الإعلام -->
+                        <div class="nav-dropdown-wrapper relative h-full flex items-center">
+                            <button class="nav-dropdown-trigger text-gray-600 hover:text-primary font-bold text-sm px-1 py-2 inline-flex items-center transition-colors duration-200">
+                                <span>الإعلام</span>
+                                <i class="fi fi-rr-angle-small-down text-[10px] mr-1 mt-1 text-gray-400 transition-transform duration-300"></i>
+                            </button>
+                            <!-- Mega Dropdown -->
+                            <div class="mega-dropdown">
+                                <div class="mega-dropdown-content compact">
+                                    <div class="mega-dropdown-grid">
+                                        <a href="#" class="mega-dropdown-link">أخبار الجامعة</a>
+                                        <a href="#" class="mega-dropdown-link">الإعلانات</a>
+                                        <a href="#" class="mega-dropdown-link">الصور والفيديو</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Tab 8: تواصل معنا -->
+                        <div class="nav-dropdown-wrapper relative h-full flex items-center">
+                            <button class="nav-dropdown-trigger text-gray-600 hover:text-primary font-bold text-sm px-1 py-2 inline-flex items-center transition-colors duration-200">
+                                <span>تواصل معنا</span>
+                                <i class="fi fi-rr-angle-small-down text-[10px] mr-1 mt-1 text-gray-400 transition-transform duration-300"></i>
+                            </button>
+                            <!-- Mega Dropdown -->
+                            <div class="mega-dropdown mega-dropdown-left">
+                                <div class="mega-dropdown-content compact">
+                                    <div class="mega-dropdown-grid">
+                                        <a href="#" class="mega-dropdown-link">بيانات الاتصال</a>
+                                        <a href="#" class="mega-dropdown-link">مواقع الكليات</a>
+                                        <a href="#" class="mega-dropdown-link">الشكاوى والمقترحات</a>
+                                        <a href="#" class="mega-dropdown-link">التوظيف</a>
+                                        <a href="#" class="mega-dropdown-link">الأسئلة الشائعة</a>
+                                        <a href="#" class="mega-dropdown-link">خريطة الموقع</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </nav>
+                </div>
+
+                <!-- Left Side Group: Actions -->
+                <div class="hidden lg:flex items-center gap-4 xl:gap-6">
+                    <!-- Search -->
+                    <button id="search-btn-desktop" class="text-gray-500 hover:text-primary transition-colors p-2">
+                        <i class="fi fi-rr-search text-lg"></i>
+                    </button>
+
+                    <!-- Language -->
+                    <a href="#" class="text-gray-600 hover:text-primary font-bold text-sm flex items-center gap-2 transition-colors">
+                        <i class="fi fi-rr-globe text-lg"></i>
+                        <span>English</span>
+                    </a>
+
+                    <!-- Admission / Join -->
+                    <!-- Admission / Join -->
+                    <a href="#" class="bg-primary hover:bg-primary-dark text-white font-bold text-sm px-2 py-2 rounded-lg transition-colors duration-300 shadow-sm hover:shadow-md">
+                        الالتحاق
+                    </a>
+                </div>
+
+                <!-- Mobile Actions (Search, Language, Menu) -->
+                <div class="lg:hidden flex items-center gap-0.5">
+                    <!-- Search -->
+                    <button id="search-btn-mobile" class="text-gray-500 hover:text-primary transition-colors p-2">
+                        <i class="fi fi-rr-search text-xl"></i>
+                    </button>
+
+                    <!-- Language -->
+                    <a href="#" class="text-gray-600 hover:text-primary font-bold text-sm flex items-center gap-2 transition-colors">
+                        <i class="fi fi-rr-globe text-lg"></i>
+                        <span>English</span>
+                    </a>
+
+                    <!-- Mobile menu button -->
+                    <button id="mobile-menu-btn" class="text-gray-500 hover:text-primary focus:outline-none p-2">
+                        <i class="fi fi-rr-menu-burger text-2xl"></i>
+                    </button>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- Mobile Menu Overlay -->
+    <div id="mobile-overlay" class="mobile-overlay"></div>
+
+    <!-- Search Overlay -->
+    <div id="search-backdrop" class="search-backdrop"></div>
+    <div id="search-overlay" class="search-overlay">
+        <div class="search-overlay-container">
+            <!-- Close Button -->
+            <div class="search-close-wrapper">
+                <button id="search-close-btn" class="search-close-btn">
+                    <i class="fi fi-rr-cross text-lg"></i>
+                </button>
+            </div>
+
+            <!-- Search Content -->
+            <div class="search-content-inner">
+                <div class="search-input-group">
+                    <div class="search-input-wrapper">
+                        <i class="fi fi-rr-search search-input-icon"></i>
+                        <input type="text" placeholder="بحث" class="search-field">
+                    </div>
+                    <button class="search-submit-btn">بحث</button>
+                </div>
+
+            </div>
+        </div>
+    </div>
+
+    <!-- Mobile Menu Drawer (Slides from Right) -->
+    <div id="mobile-menu" class="mobile-drawer">
+        <!-- Drawer Header -->
+        <div class="mobile-drawer-header">
+            <img src="img/logo.png" alt="جامعة العرب" class="h-10">
+            <button id="mobile-close-btn" class="mobile-close-btn">
+                <i class="fi fi-rr-cross text-xl"></i>
+            </button>
+        </div>
+
+        <!-- Drawer Content -->
+        <div class="mobile-drawer-content">
+            
+            <!-- عن الجامعة -->
+            <div class="mobile-dropdown">
+                <button class="mobile-dropdown-trigger">
+                    <span>عن الجامعة</span>
+                    <i class="fi fi-rr-angle-small-down"></i>
+                </button>
+                <div class="mobile-dropdown-content">
+                    <a href="#">نبذة عن الجامعة</a>
+                    <a href="#">الرؤية والرسالة</a>
+                    <a href="#">القيادة الجامعية</a>
+                    <a href="#">الهيكل التنظيمي</a>
+                    <a href="#">العضويات والاعترافات</a>
+                </div>
+            </div>
+
+            <!-- الكليات -->
+            <div class="mobile-dropdown">
+                <button class="mobile-dropdown-trigger">
+                    <span>الكليات</span>
+                    <i class="fi fi-rr-angle-small-down"></i>
+                </button>
+                <div class="mobile-dropdown-content">
+                    <a href="college-medicine.html">كلية الطب والعلوم الصحية</a>
+                    <a href="#">كلية طب الأسنان</a>
+                    <a href="#">كلية الهندسة وتقنية المعلومات</a>
+                    <a href="#">كلية العلوم الإدارية</a>
+                </div>
+            </div>
+
+            <!-- المراكز والوحدات -->
+            <div class="mobile-dropdown">
+                <button class="mobile-dropdown-trigger">
+                    <span>المراكز والوحدات</span>
+                    <i class="fi fi-rr-angle-small-down"></i>
+                </button>
+                <div class="mobile-dropdown-content">
+                    <a href="#">مركز التطوير الأكاديمي وضمان الجودة</a>
+                    <a href="#">وحدة الإرشاد الأكاديمي</a>
+                    <a href="#">وحدة خدمة المجتمع</a>
+                </div>
+            </div>
+
+            <!-- شؤون الطلاب -->
+            <div class="mobile-dropdown">
+                <button class="mobile-dropdown-trigger">
+                    <span>شؤون الطلاب</span>
+                    <i class="fi fi-rr-angle-small-down"></i>
+                </button>
+                <div class="mobile-dropdown-content">
+                    <a href="#">دليل الطالب</a>
+                    <a href="#">التقديم الإلكتروني</a>
+                    <a href="#">اللوائح والأنظمة</a>
+                    <a href="#">النماذج والاستمارات</a>
+                    <a href="#">الخريجون</a>
+                    <a href="#">التقويم الأكاديمي</a>
+                </div>
+            </div>
+
+            <!-- البحث العلمي -->
+            <div class="mobile-dropdown">
+                <button class="mobile-dropdown-trigger">
+                    <span>البحث العلمي</span>
+                    <i class="fi fi-rr-angle-small-down"></i>
+                </button>
+                <div class="mobile-dropdown-content">
+                    <a href="#">عمادة البحث العلمي</a>
+                    <a href="#">مجلات الجامعة العلمية</a>
+                    <a href="#">المؤتمرات والندوات</a>
+                </div>
+            </div>
+
+            <!-- خدمة المجتمع -->
+            <div class="mobile-dropdown">
+                <button class="mobile-dropdown-trigger">
+                    <span>خدمة المجتمع</span>
+                    <i class="fi fi-rr-angle-small-down"></i>
+                </button>
+                <div class="mobile-dropdown-content">
+                    <a href="#">العيادات المجانية</a>
+                    <a href="#">القوافل الطبية</a>
+                    <a href="#">الفعاليات</a>
+                    <a href="#">تطوع معنا</a>
+                </div>
+            </div>
+
+            <!-- الإعلام -->
+            <div class="mobile-dropdown">
+                <button class="mobile-dropdown-trigger">
+                    <span>الإعلام</span>
+                    <i class="fi fi-rr-angle-small-down"></i>
+                </button>
+                <div class="mobile-dropdown-content">
+                    <a href="#">أخبار الجامعة</a>
+                    <a href="#">الإعلانات</a>
+                    <a href="#">الصور والفيديو</a>
+                </div>
+            </div>
+
+            <!-- تواصل معنا -->
+            <div class="mobile-dropdown">
+                <button class="mobile-dropdown-trigger">
+                    <span>تواصل معنا</span>
+                    <i class="fi fi-rr-angle-small-down"></i>
+                </button>
+                <div class="mobile-dropdown-content">
+                    <a href="#">بيانات الاتصال</a>
+                    <a href="#">مواقع الكليات</a>
+                    <a href="#">الشكاوى والمقترحات</a>
+                    <a href="#">التوظيف</a>
+                    <a href="#">الأسئلة الشائعة</a>
+                    <a href="#">خريطة الموقع</a>
+                </div>
+            </div>
+
+        </div>
+
+        <!-- Drawer Footer -->
+        <div class="mobile-drawer-footer">
+            <a href="#" class="mobile-cta-btn">
+                الالتحاق
+            </a>
+        </div>
+    </div>
+
+    <!-- College Menu Overlay -->
+    <div id="college-menu-overlay" class="college-menu-overlay"></div>
+
+    <!-- College Side Menu -->
+    <div id="college-side-menu" class="college-side-menu">
+        <div class="college-menu-header">
+            <div class="college-menu-header-info">
+                <img src="img/images.jpg" alt="شعار الكلية" class="college-menu-logo">
+                <h3 class="college-menu-title">قسم التعليم الطبي</h3>
+            </div>
+            <button id="college-menu-close" class="college-menu-close">
+                <i class="fi fi-rr-cross text-xs"></i>
+            </button>
+        </div>
+        <div class="college-menu-content">
+            <a href="college-medicine.html" class="college-side-link">عن الكلية</a>
+            <!-- <a href="dept-general-medicine.html" class="college-side-link" style="color: var(--primary); font-weight: 700;">قسم طب عام وجراحة</a> -->
+            <div class="college-accordion">
+                <button class="college-accordion-trigger">
+                    <span>أقسام الكلية</span>
+                    <i class="fi fi-rr-angle-small-down"></i>
+                </button>
+                <div class="college-accordion-content">
+                    <a href="dept-general-medicine.html" class="college-side-link">قسم طب عام وجراحة</a>
+                    <a href="#" class="college-side-link">قسم الصيدلة</a>
+                    <a href="#" class="college-side-link">قسم المختبرات الطبية</a>
+                    <a href="#" class="college-side-link">قسم السمع والنطق</a>
+                    <a href="#" class="college-side-link">قسم العلاج الطبيعي</a>
+                </div>
+            </div>
+            <div class="college-accordion">
+                <button class="college-accordion-trigger">
+                    <span>برامج الكلية</span>
+                    <i class="fi fi-rr-angle-small-down"></i>
+                </button>
+                <div class="college-accordion-content">
+                    <a href="program-general-medicine.html" class="college-side-link">برنامج البكالوريوس في الطب عام وجراحة</a>
+                    <a href="program-general-medicine.html" class="college-side-link">برنامج الماجستير في الطب عام وجراحة</a>
+                </div>
+            </div>
+            <a href="#" class="college-side-link">كادر الكلية</a>
+            <a href="#" class="college-side-link">أخبار الكلية</a>
+            <a href="#" class="college-side-link">مرافق الكلية</a>
+            <a href="#" class="college-side-link">الهيكل التنظيمي</a>
+        </div>
+    </div>
+
+    <!-- Floating Trigger Button -->
+    <button id="college-menu-trigger" class="college-menu-trigger" aria-label="قائمة القسم">
+        <i class="fi fi-rr-apps text-2xl"></i>
+    </button>
+
+    <main>
+
+        <!-- ===== PAGE HEADER ===== -->
+        <section class="page-header">
+            <div class="container mx-auto px-4 lg:px-12 relative z-10 w-full">
+                <div class="page-header-inner">
+                    <div class="breadcrumb" data-aos="fade-left" data-aos-delay="200">
+                        <a href="index.html">الرئيسية</a>
+                        <span class="sep">/</span>
+                        <a href="college-medicine.html">كلية الطب والعلوم الصحية</a>
+                        <span class="sep">/</span>
+                        <span class="current">قسم التعليم الطبي</span>
+                    </div>
+                    <h1 data-aos="fade-left" data-aos-delay="400" class="page-header-title">قسم التعليم الطبي</h1>
+                </div>
+            </div>
+        </section>
+
+        <!-- ===== DEAN / HEAD MESSAGE ===== -->
+        <section class="dean-section left-right-section">
+            <div class="dean-card" data-aos="fade-up">
+
+                <!-- Top Row: Logo + Head Info -->
+                <div class="dean-top-row">
+
+                    <!-- Right: Head Photo + Info -->
+                    <div class="dean-info-side">
+                        <div class="dean-photo-wrapper">
+                            <img src="img/دكتور باطرفي.jpg" alt="أ.د وديع سعيد بن غوث">
+                        </div>
+                        <h3 class="dean-name">أ.د وديع سعيد بن غوث</h3>
+                        <p class="dean-role">رئيس قسم التعليم الطبي</p>
+                    </div>
+
+                    <!-- Center: Mid Image -->
+                    <div class="dean-center-img">
+                        <img src="img/about-img.png" alt="صورة تعريفية" class="dean-mid-image">
+                    </div>
+
+                    <!-- Left: College Logo -->
+                    <div class="dean-logo-side">
+                        <img src="img/images.jpg" alt="شعار الكلية" class="dean-college-logo">
+                    </div>
+
+                </div>
+
+                <!-- Head Message Text -->
+                <div class="dean-message-content">
+                    <div class="dean-quote-icon">"</div>
+                    <h2 class="dean-message-title">كلمة رئيس القسم</h2>
+                    <p class="dean-message-text">
+                        بسم الله الرحمن الرحيم، والصلاة والسلام على أشرف الخلق وسيد المرسلين سيدنا محمد وعلى آله وصحبه أجمعين. وبعد
+                        يسعدني أن أرحب بكم في قسم التعليم الطبي، وهو قسم أكاديمي تأسس عام 2021 جنباً إلى جنب مع تأسيس برنامج الطب البشري بجامعة العرب، وتعد مهمة القسم الرئيسية تمكين الأقسام الأكاديمية الأخرى في برنامج الطب البشري من القيام بالمهام الأكاديمية في بناء المقررات وطرق التعليم والتعلم وتقييم الطلاب وفق ما توصل إليه العلم في مجال التعليم الطبي الحديث، كما أن للقسم دوراً فاعلاً و محوري في الاشراف على العملية التعليمية في السنوات الثلاث الأولى كونها قائمة على أساس التعليم عن طريق حل المشاكل (Problem-based learning)، ويقوم القسم بالإضافة إلى ذلك بالإشراف المباشر على مجموعة من المقررات الطولية والتي تعتبر مقررات مساعدة للطلاب في تحصيل مخرجات البرنامج الرئيسية، وتدريب الطلاب على المهارات الطبية الأساسية في مختبرات المهارات المجهزة بأحدث الوسائل التعليمية في المجال الطبي، وأيضا تدريبهم على أساسيات البحث العلمي لتنمية قدراتهم على البحث عن المعرفة، وتنفيذ البحوث التطبيقية التي تخدم المجال الصحي من قبل الطلاب وفقا لمبدأ “التعليم المبني على البراهين”.
+                    </p>
+                </div>
+
+            </div>
+        </section>
+
+        <!-- ===== VISION & MISSION ===== -->
+        <!-- ===== ABOUT DEPARTMENT ===== -->
+        <section class="dept-about-section left-right-section" data-aos="fade-up">
+            <div class="dept-about-container">
+                <div class="dept-about-grid">
+                    <!-- Text Content -->
+                    <div class="dept-about-text">
+                        <div class="obj-header">
+                            <h2 class="obj-title">نبذة عن القسم</h2>
+                            <div class="obj-line"></div>
+                        </div>
+                        <p class="dept-about-desc">
+                            هذا النص هو مثال لنص يمكن أن يستبدل في نفس المساحة، لقد تم توليد هذا النص من مولد النص العربى، حيث يمكنك أن تولد مثل هذا النص أو العديد من النصوص الأخرى إضافة إلى زيادة عدد الحروف التى يولدها التطبيق. إذا كنت تحتاج إلى عدد أكبر من الفقرات يتيح لك مولد النص العربى زيادة عدد الفقرات كما تريد، النص لن يبدو مقسما ولا يحوي أخطاء لغوية، مولد النص العربى مفيد لمصممي المواقع على وجه الخصوص، حيث يحتاج العميل فى كثير من الأحيان أن يطلع على صورة حقيقية لتصميم الموقع.
+                        </p>
+                    </div>
+                    <!-- Image / Logo -->
+                    <div class="dept-about-image">
+                        <div class="dept-logo-wrapper">
+                            <img src="img/IMG_20200906_124828.jpg" alt="شعار القسم" class="dept-about-logo">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+         
+
+       
+
+    </main>
+
+    <!-- Footer -->
+    <footer class="main-footer">
+        <div class="footer-container">
+            <div class="footer-top">
+                <!-- Column 1: Logo & Contact Info -->
+                <div class="footer-col about-col">
+                    <img src="img/logo-white.png" alt="شعار جامعة العرب" class="mb-4 footer-main-logo">
+                    <p class="text-sm mb-2 text-white">هوية و حضارة</p>
+                    <div class="contact-info mt-4">
+                        <p class="mb-2 flex items-center gap-2 contact-text">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"></path><circle cx="12" cy="10" r="3"></circle></svg>
+                            اليمن - حضرموت - المكلا
+                        </p>
+                        <p class="mb-2 phone-ltr contact-text">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"></path></svg>
+                            05313131 / 05307111 / 05361884
+                        </p>
+                        <p class="mb-2 flex items-center gap-2 contact-text">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path><polyline points="22,6 12,13 2,6"></polyline></svg>
+                            info@alarabuni.edu.ye
+                        </p>
+                    </div>
+                    <div class="footer-social mt-6">
+                        <a href="#" class="social-icon" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#" class="social-icon" aria-label="Twitter"><i class="fab fa-x-twitter"></i></a>
+                        <a href="#" class="social-icon" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+                        <a href="#" class="social-icon" aria-label="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
+                        <a href="#" class="social-icon" aria-label="YouTube"><i class="fab fa-youtube"></i></a>
+                    </div>
+                </div>
+
+                <!-- Column 2: Colleges -->
+                <div class="footer-col">
+                    <h3 class="footer-title">الكليات</h3>
+                    <ul class="footer-links">
+                        <li><a href="#">كلية طب الاسنان</a></li>
+                        <li><a href="college-medicine.html">كلية الطب و العلوم الصحية</a></li>
+                        <li><a href="#">كلية الهندسة و تقنية المعلومات</a></li>
+                        <li><a href="#">كلية العلوم الادارية</a></li>
+                    </ul>
+                </div>
+
+                <!-- Column 3: Centers & Units -->
+                <div class="footer-col">
+                    <h3 class="footer-title">مراكز - وحدات الجامعة</h3>
+                    <ul class="footer-links">
+                        <li><a href="#">مركز التطوير الأكاديمي وضمان الجودة</a></li>
+                        <li><a href="#">وحدة الإرشاد الأكاديمي</a></li>
+                        <li><a href="#">وحدة خدمة المجتمع</a></li>
+                    </ul>
+                </div>
+
+                <!-- Column 4: Quick Links -->
+                <div class="footer-col">
+                    <h3 class="footer-title">روابط سريعة</h3>
+                    <ul class="footer-links">
+                        <li><a href="#">التسجيل في الجامعة</a></li>
+                        <li><a href="#">النماذج و الأستمارات</a></li>
+                        <li><a href="#">الخريجين</a></li>
+                        <li><a href="#">نتائج الطلاب</a></li>
+                        <li><a href="#">التقويم الجامعي</a></li>
+                    </ul>
+                </div>
+            </div>
+
+            <!-- Bottom Section -->
+            <div class="footer-bottom">
+                <div class="footer-copyright-col">
+                    <img src="img/logo_arab-svg.png" alt="شعار عرب وير دوز" class="mb-2 developer-logo">
+                    <a href="https://arabwdos.com/" target="_blank" class="copyright-text">جميع الحقوق محفوظة عرب وير دوز © 2026</a>
+                </div>
+                <div class="footer-logos-col map-container-wrapper">
+                    <a href="https://maps.google.com/?q=14.530875,49.123796" target="_blank" aria-label="Open Map" class="map-link">
+                        <div id="footer-mini-map" class="footer-mini-map"></div>
+                        <div class="map-overlay-label">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="mr-1"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"></path><circle cx="12" cy="10" r="3"></circle></svg>
+                            موقع الجامعة
+                        </div>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Accessibility Overlay -->
+    <div id="accessibility-overlay" style="position: fixed; top: 0; left: 0; width: 100%; height: 100%; z-index: 99990; pointer-events: none;"></div>
+    <div id="reading-guide"></div>
+
+    <!-- Accessibility Toolbar -->
+    <div id="accessibility-toolbar">
+        <button id="accessibility-toggle" aria-label="أدوات الوصول"><i class="fi fi-rr-wheelchair"></i></button>
+        <div id="accessibility-panel">
+            <div class="acc-header">
+                <h4>أدوات الوصول</h4>
+                <div style="background: rgba(0, 158, 145, 0.1); padding: 8px; border-radius: 8px;">
+                    <i class="fi fi-rr-universal-access" style="color: var(--primary); font-size: 20px;"></i>
+                </div>
+            </div>
+            <div class="acc-grid">
+                <button id="acc-font-up" class="acc-btn"><i class="fi fi-rr-zoom-in"></i><span>نص أكبر</span></button>
+                <button id="acc-font-down" class="acc-btn"><i class="fi fi-rr-zoom-out"></i><span>نص أصغر</span></button>
+                <button id="acc-cursor" class="acc-btn"><i class="fi fi-rr-mouse"></i><span>مؤشر كبير</span></button>
+                <button id="acc-grayscale" class="acc-btn"><i class="fi fi-rr-eye-crossed"></i><span>تدرج رمادي</span></button>
+                <button id="acc-contrast" class="acc-btn"><i class="fi fi-rr-bulb"></i><span>تباين عالي</span></button>
+                <button id="acc-negative" class="acc-btn"><i class="fi fi-rr-invert"></i><span>تباين سلبي</span></button>
+                <button id="acc-light-bg" class="acc-btn"><i class="fi fi-rr-brightness"></i><span>خلفية مضيئة</span></button>
+                <button id="acc-links" class="acc-btn"><i class="fi fi-rr-link-alt"></i><span>تحديد الروابط</span></button>
+                <button id="acc-reading-guide" class="acc-btn"><i class="fi fi-rr-ruler-horizontal"></i><span>مسطرة القراءة</span></button>
+            </div>
+            <button id="acc-reset" class="acc-reset-btn"><i class="fi fi-rr-rotate-right"></i> إعادة تعيين الإعدادات</button>
+        </div>
+    </div>
+
+    <!-- Scripts -->
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" integrity="sha256-p4NxAoJBhIIN+hmNHrzRCf9tD/miZyoHS5obTRR9BMY=" crossorigin="" />
+    <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js" integrity="sha256-20nQCchB9co0qIjJZRGuk2/Z9VM+kNiyxNV1lvTlZBo=" crossorigin=""></script>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollTrigger.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script src="js/style.js"></script>
+    <script src="js/college-menu.js" defer></script>
+    <script src="js/mobile-menu.js" defer></script>
+    <script src="js/accessibility-toolbar.js" defer></script>
+</body>
+</html>
