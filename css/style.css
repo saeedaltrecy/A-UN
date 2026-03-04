@@ -4336,6 +4336,9 @@ body.negative-contrast img, body.negative-contrast video {
     .page-header-title {
         font-size: 1.2rem;
     }
+    .page-header .breadcrumb {
+        font-size: 0.6rem;
+    }
 }
 
 /* =========================================
@@ -6474,3 +6477,4 @@ body.negative-contrast img, body.negative-contrast video {
     transform-origin: right;
 
 }
+
