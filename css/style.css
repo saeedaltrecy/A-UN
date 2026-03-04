@@ -3974,8 +3974,8 @@ body.negative-contrast img, body.negative-contrast video {
 /* Accessibility Toolbar (Premium Design) */
 #accessibility-toolbar {
     position: fixed;
-    top: 50%;
-    left: 20px;
+    top: 40%;
+    left: 5px;
     transform: translateY(-50%);
     z-index: 100000;
     display: flex;
@@ -4311,7 +4311,7 @@ body.negative-contrast img, body.negative-contrast video {
     display: flex;
     align-items: center;
     gap: 0.5rem;
-    font-size: 0.6rem;
+    font-size: 0.8rem;
 }
 
 .page-header .breadcrumb a {
@@ -6472,4 +6472,5 @@ body.negative-contrast img, body.negative-contrast video {
 }
 [dir="ltr"] .service-card:hover::before {
     transform-origin: right;
+
 }
